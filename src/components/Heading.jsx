@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Heading = ({text,className}) => {
+const Heading = (props) => {
   
   return (
-    <h3 className={`${className}`}>{text}</h3>
+    <props.as className={props.className}>{props.text}</props.as>
   )
 }
 
